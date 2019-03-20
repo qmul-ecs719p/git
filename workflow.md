@@ -1,6 +1,6 @@
 # Basic Workflow
 
-### 1. Creat a repository
+### 1. Create a repository
 
 To create a brand new empty repository, we can use the command `git init`, let's say we name the repository as `gitdemo`:
 
@@ -27,7 +27,7 @@ Now we add the file by:
 $ git add README.md
 ```
 
-If we check `git status` now, the file is listed as a new file that has not yet been commited to the repository. 
+If we check `git status` now, the file is listed as a new file that has not yet been committed to the repository. 
 
 ### 3. Commit 
 
@@ -66,14 +66,14 @@ $ git rm tmpfile
 Removing a file is committed by:
 
 ```
-$ git commit tmpfile.txt -m "remove file tmpfile" 
+$ git commit -m "remove file tmpfile" 
 ```
 
 ### 5. Commit Logs
 
-The messages that are added to the commit command are supposed to give a short (often one-line) description of the changes/additions/deletions in the commit. If the `-m "message"` is omitted when invoking the git commit message an editor will be opened for you to type a commit message (for example useful when a longer commit message is requried).
+The messages that are added to the commit command are supposed to give a short (often one-line) description of the changes/additions/deletions in the commit. If the `-m "message"` is omitted when invoking the git commit message an editor will be opened for you to type a commit message (for example useful when a longer commit message is required).
 
-We can look at the revision log by using the command `git log` and it should return somthing like:
+We can look at the revision log by using the command `git log` and it should return something like:
 
 ```
     commit b810ca89e9896166310ba3ad2d29bd46b9f9e9ff
@@ -103,11 +103,11 @@ We can look at the revision log by using the command `git log` and it should ret
 
 ### 6. Diffs
 
-All commits results in a changeset, which has a "diff" describing the changes to the file associated with it. We can use `git diff` so see what has changed in a file.
+All commits results in a change set, which has a "diff" describing the changes to the file associated with it. We can use `git diff` so see what has changed in a file.
 
 ### 7. Pull and Push
 
-If the respository has been cloned from another repository, for example on github.com, it automatically remembers the address of the parant repository (called origin). We can show the origin by:
+If the repository has been cloned from another repository, for example on github.com, it automatically remembers the address of the parent repository (called origin). We can show the origin by:
 
 ```
 $ git remote show origin
@@ -115,7 +115,7 @@ $ git remote show origin
 
 Here we didn't specify the remote repository before, so it could not be read. 
 
-Now let's creat a new repository called `gitdemo` at Github as our remote repository.
+Now let's create a new repository called `gitdemo` at Github as our remote repository.
 
 Github is a git repository hosting site that is very popular with both open source projects. With a hosted repository it easy to collaborate with colleagues on the same code base, and you get a graphical user interface where you can browse the code and look at commit logs, track issues etc.
 
